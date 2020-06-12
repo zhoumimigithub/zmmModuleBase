@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   s.requires_arc     = true
 
   s.subspec 'Controller' do |ss|
-        ss.source_files = "zmmModuleBase/Controller/*.{h,m}"
+        ss.source_files = "zmmModuleBase/Controller/**/*.{h,m}"
     end
     
   s.subspec 'Target' do |ss|
