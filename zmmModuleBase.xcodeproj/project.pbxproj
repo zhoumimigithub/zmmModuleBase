@@ -22,7 +22,7 @@
 		2A92ECCD9372A78B8EB718DA /* Pods-zmm_test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zmm_test.release.xcconfig"; path = "Pods/Target Support Files/Pods-zmm_test/Pods-zmm_test.release.xcconfig"; sourceTree = "<group>"; };
 		4A4E81E4362E267CE718F6E6 /* libPods-zmm_test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-zmm_test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D48886A6E33E27A2753BDAA /* Pods-zmm_test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zmm_test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-zmm_test/Pods-zmm_test.debug.xcconfig"; sourceTree = "<group>"; };
-		9C269815214AA34F004DA3E5 /* zmm_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zmm_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C269815214AA34F004DA3E5 /* zmmModuleBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zmmModuleBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C269818214AA34F004DA3E5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9C269819214AA34F004DA3E5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9C26981B214AA34F004DA3E5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -74,7 +74,7 @@
 		9C26980C214AA34F004DA3E5 = {
 			isa = PBXGroup;
 			children = (
-				9C269817214AA34F004DA3E5 /* zmm_test */,
+				9C269817214AA34F004DA3E5 /* zmmModuleBase */,
 				9C269816214AA34F004DA3E5 /* Products */,
 				90A2B4433CBAB82C2AFCDB2B /* Pods */,
 				530D6A9A215B463227D22AFF /* Frameworks */,
@@ -84,12 +84,12 @@
 		9C269816214AA34F004DA3E5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9C269815214AA34F004DA3E5 /* zmm_test.app */,
+				9C269815214AA34F004DA3E5 /* zmmModuleBase.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9C269817214AA34F004DA3E5 /* zmm_test */ = {
+		9C269817214AA34F004DA3E5 /* zmmModuleBase */ = {
 			isa = PBXGroup;
 			children = (
 				9C26982F214AA5D3004DA3E5 /* Controller */,
@@ -104,7 +104,7 @@
 				9C269826214AA350004DA3E5 /* Info.plist */,
 				9C269827214AA350004DA3E5 /* main.m */,
 			);
-			path = zmm_test;
+			path = zmmModuleBase;
 			sourceTree = "<group>";
 		};
 		9C26982E214AA5D3004DA3E5 /* Target */ = {
@@ -128,9 +128,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9C269814214AA34F004DA3E5 /* zmm_test */ = {
+		9C269814214AA34F004DA3E5 /* zmmModuleBase */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9C26982B214AA350004DA3E5 /* Build configuration list for PBXNativeTarget "zmm_test" */;
+			buildConfigurationList = 9C26982B214AA350004DA3E5 /* Build configuration list for PBXNativeTarget "zmmModuleBase" */;
 			buildPhases = (
 				54BC821F22AB5B32A9691772 /* [CP] Check Pods Manifest.lock */,
 				9C269811214AA34F004DA3E5 /* Sources */,
@@ -141,9 +141,9 @@
 			);
 			dependencies = (
 			);
-			name = zmm_test;
+			name = zmmModuleBase;
 			productName = "ModuleB-Component";
-			productReference = 9C269815214AA34F004DA3E5 /* zmm_test.app */;
+			productReference = 9C269815214AA34F004DA3E5 /* zmmModuleBase.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -161,7 +161,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9C269810214AA34F004DA3E5 /* Build configuration list for PBXProject "zmm_test" */;
+			buildConfigurationList = 9C269810214AA34F004DA3E5 /* Build configuration list for PBXProject "zmmModuleBase" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -174,7 +174,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9C269814214AA34F004DA3E5 /* zmm_test */,
+				9C269814214AA34F004DA3E5 /* zmmModuleBase */,
 			);
 		};
 /* End PBXProject section */
@@ -364,7 +364,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = zmm_test/Info.plist;
+				INFOPLIST_FILE = zmmModuleBase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "zmm.zmm-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -378,7 +378,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = zmm_test/Info.plist;
+				INFOPLIST_FILE = zmmModuleBase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "zmm.zmm-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -389,7 +389,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9C269810214AA34F004DA3E5 /* Build configuration list for PBXProject "zmm_test" */ = {
+		9C269810214AA34F004DA3E5 /* Build configuration list for PBXProject "zmmModuleBase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9C269829214AA350004DA3E5 /* Debug */,
@@ -398,7 +398,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C26982B214AA350004DA3E5 /* Build configuration list for PBXNativeTarget "zmm_test" */ = {
+		9C26982B214AA350004DA3E5 /* Build configuration list for PBXNativeTarget "zmmModuleBase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9C26982C214AA350004DA3E5 /* Debug */,
