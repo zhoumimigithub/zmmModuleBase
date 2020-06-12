@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
     end
     
   s.subspec 'Target' do |ss|
-      ss.source_files = "zmmModuleBase/Target/*.{h,m}"
+      ss.source_files = "zmmModuleBase/Target/**/*.{h,m}"
       ss.dependency "zmmModuleBase/Controller"
   end
 
