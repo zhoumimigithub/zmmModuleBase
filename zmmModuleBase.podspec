@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
 
   s.requires_arc     = true
 
-  s.subspec 'Controller' do |ss|
+  s.subspec 'utils' do |ss|
         ss.source_files = "utils/**/*.{h,m}"
     end
     
