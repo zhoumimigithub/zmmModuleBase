@@ -1,9 +1,9 @@
 
 
 Pod::Spec.new do |s|
-  s.name             = 'zmm_test'
+  s.name             = 'zmmModuleBase'
   s.version          = '0.0.1'
-  s.summary          = '这是zmm_test 组件'
+  s.summary          = '这是zmmModuleBase 组件'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -15,22 +15,22 @@ Pod::Spec.new do |s|
                        TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/zhoumimigithub/zmm_test'
+  s.homepage         = 'https://github.com/zhoumimigithub/zmmModuleBase'
   s.license          = "MIT"
   s.author           = { 'zhoumimi' => '208855194@qq.com' }
-  s.source           = { :git => 'https://github.com/zhoumimigithub/zmm_test.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/zhoumimigithub/zmmModuleBase.git', :tag => s.version.to_s }
 
   s.platform         = :ios, "8.0"
 
   s.requires_arc     = true
 
   s.subspec 'Controller' do |ss|
-        ss.source_files = "zmm_test/Controller/*.{h,m}"
+        ss.source_files = "zmmModuleBase/Controller/*.{h,m}"
     end
     
   s.subspec 'Target' do |ss|
-      ss.source_files = "zmm_test/Target/*.{h,m}"
-      ss.dependency "zmm_test/Controller"
+      ss.source_files = "zmmModuleBase/Target/*.{h,m}"
+      ss.dependency "zmmModuleBase/Controller"
   end
 
 end
