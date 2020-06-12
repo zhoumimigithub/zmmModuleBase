@@ -25,11 +25,11 @@ Pod::Spec.new do |s|
   s.requires_arc     = true
 
   s.subspec 'Controller' do |ss|
-        ss.source_files = "zmm_test/Controller/**/*.{h,m}"
+        ss.source_files = "zmm_test/Controller/*.{h,m}"
     end
     
   s.subspec 'Target' do |ss|
-      ss.source_files = "zmm_test/Target/**/*.{h,m}"
+      ss.source_files = "zmm_test/Target/*.{h,m}"
       ss.dependency "zmm_test/Controller"
   end
 
